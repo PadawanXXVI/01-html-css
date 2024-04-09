@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {/*box-level*/
+            background-color: lightslategray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */           
+            border: 10px solid darkslategray;/*forma simplificada para a borda: largura, estilo, cor - nessa ordem*/
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px 10px 10px 10px;/*forma simplificada para padding superior, direita, inferior e esquerda - nessa ordem*/
+            /*se no padding forem usados apenas 1 valor, ele assume todos no mesmo valor (superior, direita, inferior e esquerda), se você coloca dois valres, ele assume superior e inferior, assim como, ele assume direita e esquerda - exemplo: padding: 10px 20px -> superior e inferior 10px, direita e esquerda 20px*/
+
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            */
+            margin: auto;/*aqui as margens serão centralizadas de acordo com o tamanho da tela*/
+            /*margin em valores auto significa que você quer centralizar a box - exemplo: margin: 10px auto 10px auto -> margens superior e inferior em 10px e da direita e da esquerda centralizadas, ou seja, se o tamanho da tela for aumentado ou diminuido, a caixa vai se ajustar*/
+            
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: green;
+            /*
+            outline: 10px dashed green
+            Outline simplicado - largura, estilo e cor - nessa ordem*/
+        }
+        a {/*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            display: block;
+            /* display: block -> aqui eu transformo o tipo de caixa, de inline-level para um box-level*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa de Box-level</h1>
+    <p>Parágrafos também saõ exemplos de box-level, mas os <a href="#">links são exemplos de inbox-level. </a>Vamos ver isso na prática.</p>
+</body>
+</html>

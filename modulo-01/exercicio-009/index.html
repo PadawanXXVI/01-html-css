@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag STRONG (semântica)</p>
+    <h2>Itálico /Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em itálico</em> usando a tag EM (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos também criar um <mark>termo marcado</mark> usando a tag MARK</p>
+    <p> Temos aqui um <mark style="background-color: lime;">termo marcado</mark> com a tag mark e com a mudança de cor do marca-texto, para isso, usamos style junto com a tag mark</p>
+    <p>Outra forma de efetuar a mudança da cor do amrca-texto da tag MARK é usando no "head" o style e definindo para as tags MARK a cor de fundo:
+        style
+            mark{
+                backdround-color: limegreen;
+            }
+        /style    
+        Observaçao: style é uma tag CSS entre <>
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo</p>
+    <p>Big (não é semântico); Small (semântico - tipo as letras pequenas de um contrato)</p> 
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não deve ser considerado. Usando a tag DEL</p>
+    <h2>Texto incluído</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois. Usando a tag INS.</p>
+    <P>Exite também o <u>sublinhado</u>com a tag U (não semântica)</P>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>=3. Usando a tag SUP</p>
+    <h2>Texto subescrito</h2>
+    <p>Para isnerir coisas do tipo H<sub>2</sub>O. Usando a tag SUB</p>
+</body>
+</html>

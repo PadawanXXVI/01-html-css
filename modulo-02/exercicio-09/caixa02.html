@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);/*deslocamento horizontal, deslocamento vertical, espalhamento da sombra (mais clara ou mais escura) e a cor*/
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px;
+            /*a border-radius também pode assumir até 4 valores diferentes, ou seja, escolar uma borda com cada tamanho diferente (superior esquerda, superior direita, inferior direita e inferior direita - nessa ordem)
+            se usar duas medidas, serão superior esquerda junto com a inferior direita e superior direita junto inferior esquerda - são as bordas opostas*/
+        }
+        #externo{
+            text-decoration:none;            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<!--Podemos usar as seguintes "divs":
+header - cabeçalho
+main - conteúdo principal
+footer - rodapé
+dentro do main:
+nav - menu (navegação)
+section - seções
+article - artigos
+aside - dentro dos aritgos, algo que fica "do lado ou separado mas ainda permanece no article. Ex.: separar o nome do autor do artigo"
+-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Notícias Importantes do Dia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic provident quos minus aperiam nemo laborum nihil ratione? Nam sunt voluptate adipisci excepturi ducimus debitis iure provident, aut vero distinctio. Voluptates?</p>
+                <aside>Autor Desconhecido</aside>
+            </article>
+            <article>
+                <h2>Clima e Tempo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quisquam quidem. Expedita, natus? Velit recusandae praesentium ipsam dignissimos, magni perferendis optio porro harum vel reprehenderit quo, dolor odit molestiae dolores.</p>
+                <aside>Instituto Nacional de Meteorologia (INMET)<a id="externo" href="https://previsao.inmet.gov.br/" target="_blank"> Confira aqui </a></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Posso escrever um texto sem parágrafo?</p>
+    </footer>
+</body>
+</html>

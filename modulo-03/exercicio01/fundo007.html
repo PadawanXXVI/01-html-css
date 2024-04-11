@@ -6,12 +6,18 @@
     <title>Centralização Vertical de Caixa</title>
     <style>
         #container{
-            height: 500px;
+            position: relative;/*precisamos usar uma posição para determinar o local das caixas*/
+            height: 96vh;
             background-color: purple;
         }
         #conteudo {
+            position: absolute;/*precisamos usar uma posição para determinar o local das caixas*/
             height: 200px;
+            width: 400px;
             background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>

@@ -6,16 +6,26 @@
     <title>Posicionamento</title>
     <style>
         body {
+            /*
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Shorthand para o back ground
+            color image position repeat [size*] attachment
+            Exemplo:
+            background: black url('imagens/wallpaper002.jpg')  center center no-repeat cover fixed; - aqui o size não aceitou, assim a gente coloca o size em uma linha separada como: background-size: cover;*/
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;

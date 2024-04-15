@@ -20,7 +20,18 @@
             border: 1px solid black;
             padding: 10px;
         }
-        .num {
+        tbody > tr:nth-child(2n) { /*Aqui 2n informa que a cor vai ser aplicad a cada duas linhas -2n; podemos usar também odd - para ímpar ou even - para par; podemos usar também 2n-1 que seria começando na primeira e pulando a linha - tipo começando nas ímpares... Podemos usar odd e even em conjunto para escolher as cores distintas para as linhas ímpares e pares*/            
+            background-color: lightgray;
+        }
+        /* exemplo:*/
+            /*tbody > tr:nth-child(odd) {
+                background-color: blue;
+            }
+            tbody > tr:nth-child(even) {
+                background-color: yellow;
+            }
+                */
+        td.num {
             text-align: right;
         }
         h1 {
@@ -32,7 +43,6 @@
             padding: 10px;
             background-color: lightgray;
         }
-
     </style>
 </head>
 <body>

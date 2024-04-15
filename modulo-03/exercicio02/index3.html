@@ -26,6 +26,12 @@
         h1 {
             text-align: center;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
     </style>
 </head>
@@ -33,17 +39,20 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--Anatomia de Tabelas:
     Table
-        Thead
+        Caption - legenda da tabela
+        Thead - cabeça da tabela
             TR, TD, TH
-        Tbody
+        Tbody - corpo da tabela
             TR, TD, TH
-        Tfoot
+        Tfoot - pé da tabela
             TR, TD, TH
+        Obs.: como Thead, Tbody, Tfoot e Caption são tags semânticas, podemos usar em qualquer ordem que os navegadores irão entender.
         -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th><!--scope de col significa que os títulos (th) são título de coluna, já que os dados estão embaixo dos títulos-->
         </thead>
 
         <Tbody>
@@ -159,7 +168,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th><!--Aqui o scope informa que o título é um título de linha, já que o dado está na mesma liha onde está o título-->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>

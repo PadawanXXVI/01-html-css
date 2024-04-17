@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iFrame</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px dashed blue;/*para pernoalizar a borda do iFrame*/
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iFrame</h1>
+    <!--O tamanho padrão do iframe é de 300px x 150 px-->
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure itaque, sint minima incidunt tempora eum aspernatur, ullam qui ex eaque 
+        Acessando o site do 
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500"> <!--Aqui alterando a altura do iframe, porém, se houver nas CSS, vai prevalecar as das CSS-->
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe><!--em vez de frameborder, podemos mudar a borda nas CSS, por padrão, o frameborder pode ser 0 zero ou qualquer outro valor, sendo 0 sem borda e qualquer outro valor com borda-->
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
-        
-        target="_blank">illum</a> quos consectetur. Dolorum temporibus adipisci id sapiente ad neque?
+       para aprender sobre iFrame.
     </p>
     <p>
-        um novo <iframe src="https://www.padawanxxvi.github.io" frameborder="0"></iframe>
+        O repositório do Guanabara
+        <!--O scolling serve para manter ou não a barra de rolagem: são três tipos - auto, no ou yes-->
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" scolling="auto" 
+        >
+            no <a href="https://gustavoguanabara.github.io">GitHub</a>
+        </iframe>
+        
+        também é bem legal
     </p>
 </body>
 </html>

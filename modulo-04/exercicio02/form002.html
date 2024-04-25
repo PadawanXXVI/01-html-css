@@ -6,9 +6,21 @@
     <title>cadastro</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
-
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="15" placeholder="Nome do Usuário" autocomplete="username">
+            <!--required - preenchimento obrigatório/ minlength tamanho mínimo / maxlength - tmanho máximo / size - quantos caracteres digitados serão apresentados/ placeholder - informação com o que deve ser preenchido / autocomplete - informa que tipo de dado é inserido-->
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="15" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
-    
 </body>
 </html>

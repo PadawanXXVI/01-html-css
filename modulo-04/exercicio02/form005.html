@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label> <br><!--No radio button, eles precisam ter o mesmo name para que apenas uma das opções seja selecionada, nesse caso, foi o name "sexo"-->
+            <input type="radio" name="sexo" id="ifem" checked><label for="ifem">Feminino</label><!--checked dentr do input significa que quando abrirmos a página, a opção já está marcada, porém, poderá ser mudada-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat" checked><label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!--A label envolvendo o nome serve para que ao cliclar no nome, a checkbox (ou radio button) seja selecionada-->
+    <!--checked para radio button só pode apenas 1, no caso de check box podem ser mais de 1 -->
+</body>
+</html>

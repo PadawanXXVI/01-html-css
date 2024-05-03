@@ -12,7 +12,7 @@ Grandes telas: 1200px em diante
 
 @media screen and (min-width: 768) and (max-width: 992px) {
     section#login {
-        width: 90%;        
+        width: 90vw;        
     }
     section#login > div#imagem {
        float: left;

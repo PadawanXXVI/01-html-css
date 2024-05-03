@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Estilos para telas a partir de 768px */
+
+@media screen and (min-width: 768px){
+    #material-symbols-outlined {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+
+    menu ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
